@@ -11,8 +11,8 @@ services:
     volumes:
       - ./prometheus:/etc/prometheus
       - prom_data:/prometheus
-    extra_hosts:
-      - '172.17.0.1'
+    networks:
+      - prometheus-network
   grafana:
     image: grafana/grafana
     container_name: grafana
@@ -22,6 +22,8 @@ services:
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
-
 volumes:
   prom_data:
+networks:
+  prometheus-network:
+    driver: bridge
