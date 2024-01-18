@@ -12,7 +12,7 @@ services:
       - ./prometheus:/etc/prometheus
       - prom_data:/prometheus
     extra_hosts:
-      - 'host.docker.internal:host-gateway'
+      - '172.17.0.1'
   grafana:
     image: grafana/grafana
     container_name: grafana
@@ -25,5 +25,3 @@ services:
 
 volumes:
   prom_data:
-
-
