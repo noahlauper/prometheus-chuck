@@ -1,3 +1,4 @@
+version: '3'
 services:
   prometheus:
     image: prom/prometheus
@@ -5,7 +6,7 @@ services:
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
     ports:
-      - 9090:9090
+      - "9090:9090"
     restart: unless-stopped
     volumes:
       - ./prometheus:/etc/prometheus
@@ -16,7 +17,7 @@ services:
     image: grafana/grafana
     container_name: grafana
     ports:
-      - 3000:3000
+      - "3000:3000"
     restart: unless-stopped
     environment:
       - GF_SECURITY_ADMIN_USER=admin
@@ -24,3 +25,5 @@ services:
 
 volumes:
   prom_data:
+
+
