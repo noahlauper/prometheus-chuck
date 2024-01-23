@@ -1,5 +1,4 @@
-version: '3.1'
-
+version: '3'
 
 services:
   mongo:
@@ -8,7 +7,6 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: tie
       MONGO_INITDB_ROOT_PASSWORD: sec1.01
-
 
   mongo-express:
     image: mongo-express
