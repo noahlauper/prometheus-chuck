@@ -1,0 +1,33 @@
+ion-card {
+  height: 250px;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ion-label {
+  margin-left: 6px !important;
+}
+
+ion-card-header {
+  height: 100%;
+}
+
+ion-button {
+  position: absolute;
+  bottom: 16px;
+  width: 90%;
+}
+
+h2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -443,7 +443,6 @@ CREATE DATABASE chess_tielau WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE 
 
 ALTER DATABASE chess_tielau OWNER TO tie;
 
-\connect chess_tielau
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -6390,7 +6389,7 @@ CREATE DATABASE wikidb WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE = 'en_
 
 ALTER DATABASE wikidb OWNER TO postgres;
 
-\connect wikidb
+
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;

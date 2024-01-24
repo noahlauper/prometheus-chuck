@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <iframe *ngIf="website!==''" [src]="website | http" allow="autoplay"></iframe>
+  <div *ngIf="website===''" id="container">
+    <div class="notfound-404">
+      <h1 *ngIf="currentUser">Welcome {{currentUser.username}}</h1>
+    </div>
+    <ion-button (click)="loadRandomBackground()">show me something useless</ion-button>
+  </div>
+</ion-content>
+

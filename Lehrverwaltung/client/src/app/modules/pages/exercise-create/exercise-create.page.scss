@@ -1,0 +1,32 @@
+ion-icon {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.autocomplete {
+  cursor: pointer;
+}
+
+.close {
+  cursor: pointer;
+}
+
+ion-toolbar {
+  --background: #373737;
+}
+
+ion-content {
+  --ion-background-color: #1e1e1e;
+}
+
+ion-segment {
+  height: 40px;
+}
+
+ion-segment-button {
+  font-size: 18px;
+}
+
+.selection-margin-top {
+  margin-top: 10px;
+}

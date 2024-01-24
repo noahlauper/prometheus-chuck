@@ -1,0 +1,210 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <h1>Aufgabe erstellen</h1>
+    </ion-title>
+    <ion-icon class="ion-margin-horizontal" (click)="modalCtrl.dismiss()" name="close-circle-outline"
+              slot="end">
+    </ion-icon>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding-horizontal" color="green">
+  <ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-segment [disabled]="!isSMARTExercisePossible" [(ngModel)]="viewSelection" mode="ios" value="normal">
+            <ion-segment-button value="normal">
+              Hauptinformationen
+            </ion-segment-button>
+            <ion-segment-button value="smart">
+              SMART-Informationen
+            </ion-segment-button>
+          </ion-segment>
+        </ion-col>
+      </ion-row>
+      <form (ngSubmit)="submitExercise()" [formGroup]="createExerciseForm">
+        <div *ngIf="viewSelection == 'normal'">
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label position="floating"
+                           [color]="buttonColorService.choseColorForField('title', createExerciseForm, true)">
+                  Titel
+                </ion-label>
+                <ion-input formControlName="title" maxlength="24" minlength="5"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label position="floating"
+                           [color]="buttonColorService.choseColorForField('requirement', createExerciseForm, true)">
+                  Voraussetzung
+                </ion-label>
+                <ion-input (ionChange)="select($event)" formControlName="requirement" maxlength="12" minlength="2">
+                </ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col>
+              <ion-item class="selection-margin-top">
+                <ion-label [color]="buttonColorService.choseColorForField('language', createExerciseForm, true)">
+                  Programmiersprache
+                </ion-label>
+                <br>
+                <ion-select (ionChange)="checkIfExerciseCanBeSMART()" cancelText="abbrechen" formControlName="language"
+                            okText="auswählen">
+                  <ion-select-option *ngFor="let exerciseChipObject of exerciseChipObjects"
+                                     [value]="exerciseChipObject.language">{{exerciseChipObject.language}}</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="requirement !== '' && getAllRequirements().length !== 0">
+            <ion-col>
+              <ion-item class="ion-no-padding cursor-pointer">
+                <ion-list>
+                  <ion-item (click)="selectFromAutoComplete(requirement)"
+                            *ngFor="let requirement of getAllRequirements()"
+                            class="autocomplete">{{requirement}}
+                  </ion-item>
+                </ion-list>
+              </ion-item>
+            </ion-col>
+            <ion-col></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-margin-horizontal">
+              <ion-text [color]="buttonColorService.choseColorForField('links', createExerciseForm, true)">
+                <h3 class="ion-no-margin">
+                  Links
+                </h3>
+              </ion-text>
+              <ion-list formArrayName="links">
+                <ng-container *ngFor="let link of linksArray.controls; let i = index" [formGroupName]="i">
+                  <ion-item class="ion-no-padding" class="ion-margin-bottom">
+                    <ion-label position="floating">
+                      URL #{{i + 1}}
+                    </ion-label>
+                    <ion-input placeholder="URL eingeben" formControlName="link"></ion-input>
+                    <ion-icon (click)="removeLink(i)" color="danger" name="close" size="small"
+                              slot="end"></ion-icon>
+                  </ion-item>
+                </ng-container>
+              </ion-list>
+              <ion-item class="ion-no-padding">
+                <ion-button (click)="addLink()">
+                  Link hinzufügen
+                </ion-button>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-margin-horizontal">
+              <ion-text>
+                <h3 class="ion-no-margin">
+                  Beschreibung
+                </h3>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-textarea placeholder="Beschreibung eingeben" clear-on-edit="true" [autoGrow]="true"
+                              formControlName="description"></ion-textarea>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-button class="ion-margin-horizontal"
+                          [disabled]="createExerciseForm.invalid||getLinkNumber()===0" type="submit"
+                          [color]="buttonColorService.choseColorForButton(createExerciseForm)" expand="block">
+                Speichern
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </div>
+        <div *ngIf="viewSelection == 'smart'">
+          <ion-row>
+            <ion-col class="ion-margin-horizontal">
+              <ion-text
+                [color]="buttonColorService.choseColorForMultipleFields(['privateOutput', 'privateInput'], createExerciseForm, true)">
+                <h3 class="ion-no-margin">
+                  Private Felder
+                </h3>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label>Input</ion-label>
+                <ion-textarea placeholder="eingeben" clear-on-edit="true" [autoGrow]="true"
+                              formControlName="privateInput"></ion-textarea>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label>Output</ion-label>
+                <ion-textarea placeholder="eingeben" clear-on-edit="true" [autoGrow]="true"
+                              formControlName="privateOutput"></ion-textarea>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-margin-horizontal">
+              <ion-text
+                [color]="buttonColorService.choseColorForMultipleFields(['publicOutput', 'publicInput'], createExerciseForm, true)">
+                <h3 class="ion-no-margin">
+                  Öffentliche Felder
+                </h3>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label>Input</ion-label>
+                <ion-textarea placeholder="eingeben" clear-on-edit="true" [autoGrow]="true"
+                              formControlName="publicInput"></ion-textarea>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label>Output</ion-label>
+                <ion-textarea placeholder="eingeben" clear-on-edit="true" [autoGrow]="true"
+                              formControlName="publicOutput"></ion-textarea>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <app-file-upload
+                class="ion-margin-horizontal"
+                [extension]="chipExerciseService.get(this.createExerciseForm.get('language')?.value, 'extension')"
+                (fileUploadEmitter)="fileUploaded($event)">
+              </app-file-upload>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-button class="ion-margin-horizontal"
+                          [disabled]="createExerciseForm.invalid" type="submit"
+                          [color]="buttonColorService.choseColorForButton(createExerciseForm)" expand="block">
+                Speichern
+              </ion-button>
+
+            </ion-col>
+          </ion-row>
+        </div>
+      </form>
+    </ion-grid>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,43 @@
+<ion-card>
+  <ion-card-header>
+    <ion-chip color="{{chipExerciseService.get(exercise.language, 'color')}}">
+      <ion-label>
+        <ion-icon name="{{chipExerciseService.get(exercise.language, 'icon')}}"></ion-icon>
+        <ion-label>{{exercise.language}}</ion-label>
+      </ion-label>
+    </ion-chip>
+    <ion-chip color="medium">
+      <ion-label>
+        <ion-icon name="school">
+        </ion-icon>
+        <ion-label color="medium">{{exercise.requirement}}</ion-label>
+      </ion-label>
+    </ion-chip>
+    <ion-card-title [color]="exercise.textFile===null? 'dark' : 'tertiary'">
+      <ion-grid class="ion-no-padding">
+        <ion-row class="ion-no-padding">
+          <ion-col class="ion-no-padding" size="6">
+            <h2 class="ion-margin-vertical">
+              {{exercise.title}}
+            </h2>
+          </ion-col>
+          <ion-col class="ion-no-padding" size="6">
+            <ion-chip class="ion-float-start ion-margin-vertical" color="tertiary" *ngIf="exercise.textFile!==null">
+              <ion-icon name="code"></ion-icon>
+              <ion-label>
+                SMART
+              </ion-label>
+            </ion-chip>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-title>
+    <ion-card-subtitle class="description">
+      {{exercise.description}}
+    </ion-card-subtitle>
+    <ion-button (click)="modalService.openExerciseInfoComponent(exercise)" expand="block"
+                [color]="chipExerciseService.get(exercise.language, 'color')">
+      Öffnen
+    </ion-button>
+  </ion-card-header>
+</ion-card>

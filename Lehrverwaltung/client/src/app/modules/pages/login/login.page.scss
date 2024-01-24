@@ -1,0 +1,22 @@
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+}
+
+ion-img {
+  max-width: 355px;
+  margin: auto;
+}
+
+ion-list {
+  max-width: 355px;
+  margin: auto;
+  background: transparent;
+}
+
+ion-item {
+  --ion-item-background: transparent;
+}
