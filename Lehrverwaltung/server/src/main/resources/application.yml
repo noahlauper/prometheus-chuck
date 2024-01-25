@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mariadb://chucknorris.tie.local:3306/lehrverwaltung
     username: root
-    password:
+    password: sec1.01
   jpa:
     hibernate:
       ddl-auto: create-drop
