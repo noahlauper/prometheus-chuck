@@ -7,7 +7,7 @@ export const environment = {
 };
 
 export const backend = {
-  ip: 'http://localhost:8080/'
+  ip: 'http://chucknorris.tie.local:1111/'
 };
 
 /*
