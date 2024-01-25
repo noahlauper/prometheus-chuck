@@ -1,11 +1,11 @@
 spring:
   datasource:
-    url: jdbc:mariadb://chucknorris.tie.local:3306/lehrverwaltung
-    username: root
+    url: jdbc:mariadb://chucknorris.tie.local:40000/lehrverwaltung
+    username: tie
     password: sec1.01
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
 server:
   servlet:
     session:

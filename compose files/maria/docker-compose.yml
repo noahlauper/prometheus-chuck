@@ -17,9 +17,9 @@ services:
       MYSQL_USER:  tie
       MYSQL_PASSWORD: sec1.01
     expose:
-      - "40000"
+      - "3306"
     ports:
-      - "40000:3306"
+      - "3306:3306"
     volumes:
       - mariadb:/var/lib/mysql
     networks:
