@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
   prometheus:
     image: prom/prometheus
@@ -6,7 +6,7 @@ services:
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
     ports:
-      - "9999:9999"
+      - "9090:9090"
     restart: unless-stopped
     volumes:
       - ./prometheus:/etc/prometheus
