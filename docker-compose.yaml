@@ -11,8 +11,8 @@ services:
     volumes:
       - ./prometheus:/etc/prometheus
       - prom_data:/prometheus
-    networks:
-      - prometheus-network
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
   grafana:
     image: grafana/grafana
     container_name: grafana
@@ -24,6 +24,3 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=admin
 volumes:
   prom_data:
-networks:
-  prometheus-network:
-    driver: bridge

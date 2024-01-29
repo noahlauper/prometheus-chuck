@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="859c900c-9f95-4928-8c6c-b1db84798b04" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../client/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/capacitor.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/ionic.config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/nginx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/app.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/entities/dtos/ChangeCurrentUserDTO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/entities/dtos/ChangeUserDTO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/entities/dtos/CreateRunDTO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/entities/dtos/CreateUserDTO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/entities/dtos/ExerciseDTO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/entities/dtos/LoginDTO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/guards/auth.guard.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/guards/auth.guard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/http/exercise/exercise.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/http/exercise/exercise.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/http/run/run.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/http/run/run.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/http/user/user.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/http/user/user.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/interceptors/error.interceptor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/layouts/header/header.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/layouts/header/header.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/layouts/header/header.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/layouts/header/header.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/exercise/EXERCISE_CHIP_OBJECTS.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/exercise/ExerciseChipObject.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/exercise/ExerciseModel.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/file/FileObject.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/menu/MENU_ELEMENTS.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/menu/MenuElement.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/mystery/MYSTERY.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/notification/NotificationModel.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/notification/STATUS.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/run/RunModel.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/types/TYPES.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/user/User.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/user/UserModel.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/userInfo/UserInfoModel.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/models/validator/VALIDATORS_LIST.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/services/auth/auth.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/services/auth/auth.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/services/button-color/button-color.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/services/button-color/button-color.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/services/chip-exercise/chip-exercise.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/services/chip-exercise/chip-exercise.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/services/color-transition/color-transition.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/services/color-transition/color-transition.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/services/modal/modal.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/services/modal/modal.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/services/toast/toast.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/services/toast/toast.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/components/card/card.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/components/card/card.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/components/card/card.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/components/card/card.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/components/file-upload/file-upload.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/components/file-upload/file-upload.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/components/file-upload/file-upload.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/components/file-upload/file-upload.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/components/run/run.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/components/run/run.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/components/run/run.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/components/run/run.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercise-create/exercise-create-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercise-create/exercise-create.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercise-create/exercise-create.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercise-create/exercise-create.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercise-create/exercise-create.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercise-create/exercise-create.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercise-info/exercise-info-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercise-info/exercise-info.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercise-info/exercise-info.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercise-info/exercise-info.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercise-info/exercise-info.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercise-info/exercise-info.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercises/exercises-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercises/exercises.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercises/exercises.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercises/exercises.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercises/exercises.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/exercises/exercises.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/home/home-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/home/home.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/home/home.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/home/home.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/home/home.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/home/home.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/login/login-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/login/login.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/login/login.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/login/login.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/login/login.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/login/login.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/not-found/not-found-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/not-found/not-found.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/not-found/not-found.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/not-found/not-found.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/not-found/not-found.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/not-found/not-found.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/settings/settings-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/settings/settings.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/settings/settings.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/settings/settings.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/settings/settings.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/modules/pages/settings/settings.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/shared/pipes/autocomplete.pipe.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/shared/pipes/http.pipe.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/shared/pipes/pipes.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/shared/pipes/removeOne.pipe.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/shared/pipes/search.pipe.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/shared/utils/FileUtils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/shared/validators/validators.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/shared/validators/validators.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/background/galaxy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/background/howard.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/icon/apple.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/icon/favicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/logos/php.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/logos/spring.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/logos/tie-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/logos/typescript.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/pictures/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/theme/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/zone-flags.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/ServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/config/StartupApplicationListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/config/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/controller/ExerciseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/controller/RunController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/controller/SessionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/exception/EntityExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/exception/ExerciseNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/exception/NotificationNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/exception/RoleNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/exception/RunNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/exception/UserNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/ExerciseModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/NotificationModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/RunModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/UserInfoModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/UserModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/dto/ChangeCurrentUserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/dto/ChangeUserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/dto/CreateRunDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/dto/CreateUserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/dto/ExerciseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/dto/FileObjectDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/dto/LoginDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/entity/Exercise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/entity/ExerciseDescription.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/entity/ExerciseLink.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/entity/FileObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/entity/Notification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/entity/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/entity/Run.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/entity/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/model/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/repository/ExerciseDescriptionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/repository/ExerciseLinkRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/repository/ExerciseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/repository/FileObjectRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/repository/NotificationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/repository/RoleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/repository/RunRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/service/CustomUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/service/ExerciseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/service/RunService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/service/SecurityContextService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/util/DockerJavaUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/tie/lehrlinge/lehrverwaltung/server/util/FileUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/test/java/tie/lehrlinge/lehrverwaltung/server/ServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/test/TestApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/test/TestApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2bRGIfIQyZZKkcbRjYFNpY7gcbO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="TestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="test.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.test.TestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="859c900c-9f95-4928-8c6c-b1db84798b04" name="Changes" comment="" />
+      <created>1706170401831</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706170401831</updated>
+      <workItem from="1706170403489" duration="877000" />
+      <workItem from="1706449603126" duration="464000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
