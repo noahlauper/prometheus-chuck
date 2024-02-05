@@ -20,20 +20,18 @@ scrape_configs:
       - targets:
           - host.docker.internal:9090
 
-  - job_name: 'postgres'
+  - job_name: mongod_exporter
+    scrape_interval: 5s
     static_configs:
-      - targets:
-          - server1:5432
-    metrics_path: /probe
-    params:
-      auth_module: [ foo ]
-    relabel_configs:
-      - source_labels: [ __address__ ]
-        target_label: __param_target
-      - source_labels: [ __param_target ]
-        target_label: instance
-      - target_label: __address__
-        replacement: 127.0.0.1:9187
+      - targets: [ 'host.docker.internal:9216' ]
+
+  - job_name: postgres_exporter
+    static_configs:
+      - targets: [ 'host.docker.internal:9187' ]
+
+  - job_name: mariadb_exporter
+    static_configs:
+      - targets: [ 'host.docker.internal:9104' ]
 
   - job_name: design-patterns
     metrics_path: /metrics
