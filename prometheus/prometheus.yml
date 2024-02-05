@@ -34,3 +34,58 @@ scrape_configs:
         target_label: instance
       - target_label: __address__
         replacement: 127.0.0.1:9187
+
+  - job_name: design-patterns
+    metrics_path: /metrics
+    static_configs:
+      - targets: [ 'host.docker.internal:2700' ]
+
+  - job_name: jsf-frontend
+    metrics_path: /metrics
+    static_configs:
+      - targets: [ 'host.docker.internal:2600' ]
+
+  - job_name: jsf-backend
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: [ 'host.docker.internal:2500' ]
+
+  - job_name: lz-frontend
+    metrics_path: /metrics
+    static_configs:
+      - targets: [ 'host.docker.internal:8000' ]
+
+  - job_name: lz-config-server
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: [ 'host.docker.internal:8788' ]
+
+  - job_name: lz-discovery-server
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: [ 'host.docker.internal:8761' ]
+
+  - job_name: lz-api-gateway
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: [ 'host.docker.internal:8222' ]
+
+  - job_name: lz-category-service
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: [ 'host.docker.internal:8073' ]
+
+  - job_name: lz-license-service
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: [ 'host.docker.internal:8071' ]
+
+  - job_name: lz-shopping-cart-service
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: [ 'host.docker.internal:8075' ]
+
+  - job_name: lz-favorite-service
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: [ 'host.docker.internal:8072' ]
