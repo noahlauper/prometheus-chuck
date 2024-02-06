@@ -48,10 +48,6 @@ scrape_configs:
     static_configs:
       - targets: [ 'chucknorris.tie.local:9104' ]
 
-  - job_name: design-patterns
-    static_configs:
-      - targets: [ 'host.docker.internal:9113' ]
-
   - job_name: jsf-backend
     metrics_path: /actuator/prometheus
     static_configs:
