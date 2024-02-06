@@ -25,24 +25,33 @@ scrape_configs:
     static_configs:
       - targets: [ 'host.docker.internal:9216' ]
 
-  - job_name: jsf-frontend
-    metrics_path: /metrics/jsf
-    static_configs:
-      - targets: [ 'host.docker.internal:2600' ]
-
-  - job_name: lz-frontend
+  - job_name: 'nginx-exporter-chucknorris-tie-local-2600'
     metrics_path: /metrics/lzk
-    static_configs:
-      - targets: [ 'host.docker.internal:8000' ]
+    relabel_configs:
+      - source_labels: [ __address__ ]
+        target_label: instance
+        regex: (.*)
+        replacement: nginx-exporter-2600
 
-  - job_name: design-patterns
+  - job_name: 'nginx-exporter-chucknorris-tie-local-2700'
+    static_configs:
+      - targets: [ 'chucknorris.tie.local:2700' ]
     metrics_path: /metrics/design-patterns
-    static_configs:
-      - targets: [ 'host.docker.internal:2700' ]
+    relabel_configs:
+      - source_labels: [ __address__ ]
+        target_label: instance
+        regex: (.*)
+        replacement: nginx-exporter-2700
 
-  - job_name: nginx-exporter
+  - job_name: 'nginx-exporter-chucknorris-tie-local-8000'
     static_configs:
-      - targets: [ 'host.docker.internal:9113' ]
+      - targets: [ 'chucknorris.tie.local:8000' ]
+    metrics_path: /metrics/lzk
+    relabel_configs:
+      - source_labels: [ __address__ ]
+        target_label: instance
+        regex: (.*)
+        replacement: nginx-exporter-8000
 
   - job_name: postgres_exporter
     static_configs:
