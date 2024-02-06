@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  nginx-exporter:
+    image: "nginx/nginx-prometheus-exporter:latest"
+    command: ["-nginx.scrape-uri=http://chucknorris.tie.local:2600/metrics", "-nginx.scrape-uri=http://chucknorris.tie.local:2700/metrics", "-nginx.scrape-uri=http://chucknorris.tie.local:8000/metrics"]
+    ports:
+      - "9113:9113"
