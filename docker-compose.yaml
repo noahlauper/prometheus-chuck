@@ -22,12 +22,16 @@ services:
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
-  node:
+  node_exporter:
     image: quay.io/prometheus/node-exporter
     container_name: node-exporter
     ports:
-      - 9100:9100
+      - "9100:9100"
+    command:
+      - '--path.rootfs=/host'
+    pid: host
+    restart: unless-stopped
     volumes:
-      - "/:/rootfs"
+      - "/:host:ro,rslave"
 volumes:
   prom_data:
