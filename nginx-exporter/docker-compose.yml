@@ -1,9 +1,19 @@
 version: "3.9"
 services:
-  nginx-exporter:
+  nginx-exporter-jsf:
     image: "nginx/nginx-prometheus-exporter:latest"
-    command: ["-nginx.scrape-uri=http://chucknorris.tie.local:2600/metrics/jsf",
-              "-nginx.scrape-uri=http://chucknorris.tie.local:2700/metrics/design-patterns",
-              "-nginx.scrape-uri=http://chucknorris.tie.local:8000/metrics/lzk"]
+    command: ["-nginx.scrape-uri=http://chucknorris.tie.local:2600/metrics/jsf"]
     ports:
       - "9113:9113"
+
+  nginx-exporter-design-patterns:
+    image: "nginx/nginx-prometheus-exporter:latest"
+    command: ["-nginx.scrape-uri=http://chucknorris.tie.local:2700/metrics/design-patterns"]
+    ports:
+      - "9114:9114"
+
+  nginx-exporter-lzk:
+    image: "nginx/nginx-prometheus-exporter:latest"
+    command: ["-nginx.scrape-uri=http://chucknorris.tie.local:8000/metrics/lzk"]
+    ports:
+      - "9115:9115"
