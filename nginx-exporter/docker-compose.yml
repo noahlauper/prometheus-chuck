@@ -5,3 +5,14 @@ services:
     command: "-nginx.scrape-uri=http://chucknorris.tie.local:8000/metrics/lzk"
     ports:
       - "9113:9113"
+
+  nginx-exporter-jsf:
+    image: "nginx/nginx-prometheus-exporter:latest"
+    command: "-nginx.scrape-uri=http://chucknorris.tie.local:2600/metrics/jsf"
+    ports:
+      - "9114:9114"
+  nginx-exporter-dp:
+    image: "nginx/nginx-prometheus-exporter:latest"
+    command: "-nginx.scrape-uri=http://chucknorris.tie.local:2700/metrics/design-patterns"
+    ports:
+      - "9115:9115"
