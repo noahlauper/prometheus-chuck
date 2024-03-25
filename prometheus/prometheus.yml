@@ -44,6 +44,7 @@ scrape_configs:
     static_configs:
       - targets: [ 'host.docker.internal:9113' ]
 
+
   - job_name: nginx-exporter-design-patterns
     static_configs:
       - targets: [ 'host.docker.internal:9115' ]
