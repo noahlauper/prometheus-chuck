@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  backend:
+    image: 'docker.tie.ch/tie-toeggele-backend:latest'
+    container_name: backend
+    ports:
+      - "2026:8080"
+    networks:
+      - tie-toeggele
+    restart: unless-stopped
+
+  frontend:
+    image: 'docker.tie.ch/tie-toeggele-frontend:latest'
+    container_name: frontend
+    ports:
+      - "2025:80"
+    networks:
+      - tie-toeggele
+    restart: unless-stopped
+
+networks:
+  tie-toeggele:
+    name: tie-toeggele
